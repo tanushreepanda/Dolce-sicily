@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'AbadiMT-CondensedLight';
+  src: url('https://cdn.shopify.com/s/files/1/0194/2005/3603/files/AbadiMT-CondensedLight.woff2?v=1730182670') format('woff2'),
+      url('https://cdn.shopify.com/s/files/1/0194/2005/3603/files/AbadiMT-CondensedLight.woff?v=1730182669') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Savoye LET Plain';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://cdn.shopify.com/s/files/1/0194/2005/3603/files/Savoye_LET_Plain1.0.woff?v=1730182653') format('woff');
+}
+
+.h0,
+h1, .h1,
+h2, .h2,
+h3, .h3,
+.collection-list-title a{
+  font-family: 'Savoye LET Plain';
+}
+
+body,span, a
+h4, .h4,
+h5, .h5,
+h6, .h6{
+  font-family: 'AbadiMT-CondensedLight';
+}

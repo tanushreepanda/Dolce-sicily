@@ -1,0 +1,210 @@
+/* global css */
+.link, .customer a{
+  font-size: 1.8rem;
+}
+
+/* ========== custom cart note code ============ */
+.calendar-container{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  gap: 1rem;
+}
+#datepicker {
+  /* Appearance */
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+}
+/* Placeholder color */
+#datepicker::placeholder {
+  color: #999;
+  opacity: 1;
+}
+/* Hover and focus styles */
+#datepicker:hover {
+  border-color: #888;
+}
+#datepicker:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+/* Add a calendar icon (optional) */
+#datepicker::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.5); /* Adjust icon color to match the theme */
+}
+/* .cart__dynamic-checkout-buttons {
+  display: none;
+} */
+.calendar-container #number {
+  /* Appearance */
+  padding: 8px 12px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+}
+.calendar-container #number::placeholder {
+  color: #999;
+  opacity: 1;
+}
+.calendar-container #number:hover {
+  border-color: #888;
+}
+.calendar-container #number:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+.calendar-container input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.calendar-container input[type=number] {
+  -moz-appearance: textfield;
+}
+.class-link{
+    color:#333333;
+    text-decoration:none;
+}
+.class-link:hover{
+   color:#ffbb00; 
+}
+/* From here you can start to copy */
+
+.calendar {
+  padding:8px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-size:18px;
+  border: 1px solid #333333;
+  box-shadow: 0px 20px 40px rgba(59,60,56,0.05);
+}
+.ui-datepicker {
+  background: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #d8d8d8;
+}
+.ui-datepicker-header {
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  background: #31639c;
+  margin-bottom: 10px;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 12px;
+}
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 12px;
+}
+.ui-datepicker-prev:after {
+  transform: rotate(45deg);
+  margin: -43px 0px 0px 8px;
+}
+.ui-datepicker-next {
+  float: right;
+  margin-right: 12px;
+}
+.ui-datepicker-next:after {
+  transform: rotate(-135deg);
+  margin: -43px 0px 0px 6px;
+}
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+  border-color: #333333;
+}
+.ui-datepicker-title {
+  text-align: center;
+  font-size:25px;
+}
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 40px;
+  color: #31639c;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  line-height: 40px;
+  font-size: 16px;
+}
+.ui-state-default:hover {
+  color: #ffffff;
+  background:#31639c;
+  border-radius:50px;
+  transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);
+}
+.ui-state-highlight {
+  color: #ffffff;
+  background-color:#31639c;
+  border-radius:50px;
+}
+.ui-state-active {
+  color: #ffffff;
+  background-color:#31639c;
+  border-radius:50px;
+}
+.ui-datepicker-unselectable .ui-state-default {
+  color: #eee;
+  border: 2px solid transparent;
+}
+.ui-datepicker a:not([href]){
+  cursor: pointer;
+}
+.calendar-container #number, .calendar-container #datepicker{
+  width:100%;
+  max-width:36rem;
+}
+@media screen and (max-width:749px){
+  .calendar-container{
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+
+
+
+
